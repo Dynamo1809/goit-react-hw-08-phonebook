@@ -1,13 +1,15 @@
-import { NavLink } from 'react-router-dom';
+import Navigation from '../Navigation';
+import AuthNav from '../AuthNav';
+import UserMenu from '../UserMenu';
+import { authSelectors } from 'redux/auth';
 
 const AppBar = () => {
   return (
-    <>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/contacts">Phonebook</NavLink>
-      <NavLink to="/register">Sign up</NavLink>
-      <NavLink to="/login">Login</NavLink>
-    </>
+    <header>
+      <Navigation />
+      <AuthNav />
+      <UserMenu />
+    </header>
   );
 };
 

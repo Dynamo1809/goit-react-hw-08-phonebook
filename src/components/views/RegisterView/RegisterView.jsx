@@ -2,6 +2,19 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from 'redux/auth';
 
+const styles = {
+  form: {
+    width: 320,
+    padding: 10,
+    border: '#3f51b5 solid 2px',
+  },
+  label: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginBottom: 10,
+  },
+};
+
 const RegisterView = () => {
   const dispatch = useDispatch();
   const [name, setName] = useState('');
@@ -30,12 +43,12 @@ const RegisterView = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} autoComplete="off">
-      <label>
+    <form style={styles.form} onSubmit={handleSubmit} autoComplete="off">
+      <label style={styles.label}>
         Name
         <input type="text" name="name" value={name} onChange={handleChange} />
       </label>
-      <label>
+      <label style={styles.label}>
         Email
         <input
           type="email"
@@ -44,7 +57,7 @@ const RegisterView = () => {
           onChange={handleChange}
         />
       </label>
-      <label>
+      <label style={styles.label}>
         Password
         <input
           type="password"
