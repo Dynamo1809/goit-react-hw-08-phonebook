@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/views/HomeView/HomeView.jsx"],"names":["HomeView"],"mappings":"yMAIeA,EAJE,WACf,OAAO","file":"static/js/6.fdd3d7e3.chunk.js","sourcesContent":["const HomeView = () => {\r\n  return <h1>Welcome on Contacts App</h1>;\r\n};\r\n\r\nexport default HomeView;\r\n"],"sourceRoot":""}
