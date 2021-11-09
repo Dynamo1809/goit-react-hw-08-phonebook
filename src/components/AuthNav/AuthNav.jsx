@@ -1,19 +1,21 @@
 import { NavLink } from 'react-router-dom';
 
+import './AuthNav.scss';
+
 const styles = {
   activeLink: '#3f51b5',
 };
 
 const AuthNav = () => {
   return (
-    <>
-      <NavLink to="/register" activeStyle={styles.activeLink}>
+    <div className="AuthNav__container">
+      <NavLink className="AuthNav__link" to="/register" activeStyle={styles.activeLink}>
         Sign up
       </NavLink>
-      <NavLink to="/login" activeStyle={styles.activeLink}>
+      <NavLink className="AuthNav__link" to="/login" activeStyle={styles.activeLink}>
         Login
       </NavLink>
-    </>
+    </div>
   );
 };
 

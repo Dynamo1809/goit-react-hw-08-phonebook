@@ -1,0 +1,8 @@
+.AuthNav__link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #3f51b5;
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}

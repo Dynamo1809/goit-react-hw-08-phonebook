@@ -1,0 +1,21 @@
+@import 'styles/shared.scss';
+
+.UserMenu__container {
+  display: flex;
+  align-items: center;
+}
+
+.UserMenu__text {
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+.UserMenu__button {
+  @extend %button;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
